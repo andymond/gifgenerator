@@ -12,6 +12,6 @@ describe "admin can generate gifs" do
 
     expect(page).to have_content("Generated new Gif!")
     expect(current_path).to eq(gifs_path)
-    expect{Gif.all}.to eq(1)
+    expect(Gif.all.length).to eq(1)
   end
 end
