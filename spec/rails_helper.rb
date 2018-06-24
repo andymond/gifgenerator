@@ -55,6 +55,8 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
+  config.include FactoryBot::Syntax::Methods
+
   DatabaseCleaner.strategy = :truncation
 
   config.before(:all) do
@@ -64,6 +66,7 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
 end
 
 Shoulda::Matchers.configure do |config|
