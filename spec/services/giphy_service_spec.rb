@@ -6,5 +6,7 @@ describe "Giphy Service" do
     results = service.random("cats")
 
     expect(results).to be_a(Hash)
+    expect(results[:slug]).to_not be(nil)
+    expect(results[:embed_url]).to_not be(nil)
   end
 end
