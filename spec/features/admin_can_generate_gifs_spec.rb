@@ -13,5 +13,14 @@ describe "admin can generate gifs" do
     expect(page).to have_content("Generated new Gif!")
     expect(current_path).to eq(gifs_path)
     expect(Gif.all.length).to eq(1)
+    expect(page).to have_selector(".gif", count: 1)
+
+    fill_in "search_term", with: "dogs"
+    click_on "Generate new Gif!"
+
+    expect(page).to have_content("Generated new Gif!")
+    expect(current_path).to eq(gifs_path)
+    expect(Gif.all.length).to eq(2)
+    expect(page).to have_selector(".gif", count: 2)
   end
 end
