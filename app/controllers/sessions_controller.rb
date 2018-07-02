@@ -15,4 +15,10 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    flash[:notice] = "Logged out! Smell ya later, #{current_user.name}"
+    session.clear
+    redirect_to root_path
+  end
+
 end

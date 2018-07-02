@@ -1,2 +1,5 @@
-= link_to "Profile" user_path(current_user)
-= link_to "Gifs" gifs_path
+- if current_user
+  %nav.logged-in
+    = link_to "Profile", user_path(current_user)
+    = link_to "Gifs", gifs_path
+    = link_to "Log out", logout_path, method: :delete
