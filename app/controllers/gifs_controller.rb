@@ -20,7 +20,9 @@ class GifsController < ApplicationController
   private
 
     def admin?
-      current_admin
+      unless current_admin
+        render status: 404
+      end
     end
 
 end
