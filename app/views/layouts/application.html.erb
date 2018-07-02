@@ -12,6 +12,7 @@
     <% flash.each do |key, value| %>
       <div class="alert alert-<%= key %>"> <%= value %> </div>
     <% end %>
+    <%= render '/gifs/gif_generator' %>
     <%= yield %>
   </body>
 </html>

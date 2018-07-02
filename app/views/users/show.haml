@@ -2,8 +2,3 @@
   = @user.name
   %hr
   = @user.email
-
-- if current_admin
-  = form_tag('/gifs') do
-    = text_field_tag 'search_term'
-    = submit_tag 'Generate new Gif!'
