@@ -10,7 +10,11 @@
 
   <body>
     <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>"> <%= value %> </div>
+      <div class="alert alert-<%= key %>">
+        <div class="inner-alert">
+          <%= value %>
+        </div>
+      </div>
     <% end %>
     <a href=<%= root_path %> >
       <h2>Super Secret Gif Club</h2>

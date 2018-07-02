@@ -35,6 +35,24 @@ nav a {
   color: #fff;
 }
 
+.alert {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+}
+
+.inner-alert {
+  background: #ffffff7a;
+  padding: 5px;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  min-width: 140px;
+  border: 1px solid #ed9782;
+  z-index: 1;
+  position: relative;
+  left: -50%;
+}
+
 .card {
   background: #ffffff7a;
   margin: 10px;
