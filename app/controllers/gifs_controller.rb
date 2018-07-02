@@ -1,4 +1,4 @@
-class GifsController < ApplicationController
+class GifsController < BaseController
   before_action :admin?, only: [:create]
 
   def create

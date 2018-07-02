@@ -1,10 +1,12 @@
 class BaseController < ApplicationController
-  before_action :user?
+  before_action :logged_in?
 
   private
-    def user?
+
+    def logged_in?
       unless current_user
-        render status: 404
+        raise ActionController::RoutingError.new('Not Found')
       end
     end
+
 end

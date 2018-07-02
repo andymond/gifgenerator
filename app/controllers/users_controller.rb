@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class UsersController < BaseController
   before_action :logged_in?, only: [:show]
 
   def create
@@ -21,12 +21,6 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:name, :email, :password)
-    end
-
-    def logged_in?
-      unless current_user
-        raise ActionController::RoutingError.new('Not Found')
-      end
     end
 
 end
