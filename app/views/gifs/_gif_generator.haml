@@ -1,4 +1,4 @@
 - if current_admin
-  = form_tag('/gifs') do
+  = form_tag '/gifs', class: 'generator-form' do
     = text_field_tag 'search_term'
-    = submit_tag 'Generate new Gif!'
+    = submit_tag 'Generate new Gif!', class: 'generator-submit'

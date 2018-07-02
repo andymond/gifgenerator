@@ -1,0 +1,41 @@
+.new_user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#user_name, #user_email, #user_password, #email, #password {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.sign-up-button, .login-button {
+  width: 200px;
+  height: 35px;
+  background-color: #009cdb;
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 10px;
+  padding: 5px 5px 2px 5px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login span {
+  background: #ffffff5a;
+  padding: 5px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.login a {
+  color: #fff;
+}
