@@ -3,7 +3,9 @@
     = f.text_field :name
     = f.email_field :email
     = f.password_field :password
-    = f.submit "Create Account"
+    = f.submit "Create Account", class: 'sign-up-button'
 
 .login
-  = link_to "Log in", new_session_path
+  %span
+    Already a member?
+    = link_to "Log in", new_session_path

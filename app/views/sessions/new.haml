@@ -1,5 +1,5 @@
 .login-form
-  = form_tag('/sessions') do
+  = form_tag '/sessions', class: 'new_user' do
     = email_field_tag 'email'
     = password_field_tag 'password'
-    = submit_tag "Log in"
+    = submit_tag "Log in", class: 'login-button'

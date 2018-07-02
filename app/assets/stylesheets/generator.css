@@ -1,0 +1,28 @@
+.generator-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.generator-form input {
+  margin-top: 10px;
+}
+
+#search_term {
+  width: 200px;
+  height: 30px;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.generator-submit {
+  width: 200px;
+  height: 35px;
+  background-color: #009cdb;
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 5px 5px 2px 5px;
+}

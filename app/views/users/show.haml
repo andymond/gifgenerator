@@ -1,4 +1,7 @@
-%h3
-  = @user.name
+.profile.card
+  %h3
+    = @user.name
   %hr
-  = @user.email
+  %p
+    Current email: 
+    = @user.email
