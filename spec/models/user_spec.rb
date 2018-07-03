@@ -12,4 +12,5 @@ RSpec.describe User, type: :model do
 
     expect(user.role).to eq("user")
   end
+  it {should have_many(:user_gifs)}
 end
